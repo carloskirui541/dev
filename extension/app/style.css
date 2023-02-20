@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    background: white;
+    color: black;
+    min-width: 400px;
+    border-color: green;
+  }
+  #text-el {
+    font-family: monospace;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: 1px solid green;
+    margin-bottom: 4px;
+  }
+  #input-btn {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+  }
+  #input-btn:hover {
+    background: goldenrod;
+    color: black;
+  }
+  #delete-btn:hover {
+    background: red;
+    color: white;
+  }
+  #save-btn:hover {
+    background: blue;
+    color: white;
+  }
+  #ul-el {
+    font-family: monospace;
+    color: black;
+    padding-left: none;
+  }
+  #delete-btn {
+    padding: 10px 20px;
+    color: black;
+    border-color: green;
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+  }
+  #save-btn {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+  }
+  a {
+    color: green;
+  }
