@@ -4,138 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abstract Website Clone</title>
+    <link rel="shortcut icon" href="stock/favicon.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <style>
-        * {
-            font-family: Poppins;
-
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        nav {
-            padding-top: 13px;
-            background: #000000;
-            height: 30px;
-            padding-bottom: 43px;
-            color: white;
-        }
-
-        ul {
-            gap: .5rem;
-            display: flex;
-            list-style-type: none;
-        }
-
-        li {
-            display: flex;
-        }
-
-        li img {
-            height: 40px;
-            padding-right: .5rem;
-        }
-
-        li div,
-        li:nth-child(2) {
-            font-size: 21px;
-            margin-top: .3rem;
-            margin-right: auto;
-        }
-
-        li div {
-            font-weight: bolder;
-        }
-
-        li:nth-child(2):hover {
-            border-bottom: 3px solid white;
-        }
-
-        .others {
-            display: flex;
-        }
-
-        button,
-        li {
-            cursor: pointer;
-        }
-
-        .submit {
-            font-size: 16pt;
-            border: 1px solid #fff;
-            color: white;
-            border-radius: 10px;
-            background: transparent;
-            margin-top: .3rem;
-            height: 39px;
-            width: 200px;
-            margin-right: 2rem;
-        }
-
-        .sign-in {
-            font-size: 13pt;
-            margin-right: 1rem;
-            height: 38px;
-            width: 85px;
-            background-color: #4C5FD5;
-            border: none;
-            /* outline: none; */
-            border-radius: 10px;
-        }
-
-        @media (min-width:1024px) {
-            .sign-in {
-                margin-right: 3rem;
-            }
-
-        }
-
-
-        article {
-            padding-top: .3rem;
-            padding-bottom: 4.2rem;
-            height: 300px;
-            background-color: #dadbf1;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        article h2 {
-            font-size: 40pt;
-        }
-
-        .search-bar {
-            padding-left: 8px;
-            padding-right: 10px;
-            padding-top: 1rem;
-            height: 45px;
-            background-color: #fff;
-            padding-bottom: 1rem;
-        }
-
-        .search-bar img {
-            height: 35px;
-        }
-
-        .search-bar input {
-            padding: 10px;
-            outline: none;
-            width: 640px;
-            border: none;
-            font-size: 13pt;
-
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Noto+Sans+Mono:wght@200&family=Noto+Serif+Makasar&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -157,10 +33,86 @@
     <article>
         <h2>How can we help?</h2>
         <div class="search-bar">
-            <input type="text" placeholder="Search " />
-            <img src="stock/input-arrow.svg" alt="">
+            <input type="text" placeholder="Search " id="search" class="not-typing" />
+            <img src="stock/input-arrow.svg" alt="" id="img">
         </div>
     </article>
+
+    <main>
+        <div class="parent-1">
+            <img src="https://theme.zdassets.com/theme_assets/2197739/aed6500f4da41c641f3de5d96247eb6654e9c386.png"
+                alt="">
+            <div class="content">
+                <h1>Using Abstract</h1>
+                <h4>Abstract lets you manage, version, and document your designs in one place.</h4>
+                <a href="https://theme.zdassets.com/theme_assets/2197739/91588b3d042df901d9b941ccbb57af4f151401c7.png">Learn
+                    More <img src="stock/link-arrow.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="parent-1">
+            <img src="https://theme.zdassets.com/theme_assets/2197739/91588b3d042df901d9b941ccbb57af4f151401c7.png"
+                alt="">
+            <div class="content">
+                <h1>Manage your account</h1>
+                <h4>Configure your account settings, such as your email, profile details, and password.</h4>
+                <a href="https://help.abstract.com/hc/en-us/categories/360005436612-Using-Abstract">Learn More <img
+                        src="stock/link-arrow.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="parent-1">
+            <img src="https://theme.zdassets.com/theme_assets/2197739/50d0db451c0e1e66e1caddd142986fcf6792ca05.png"
+                alt="">
+            <div class="content">
+                <h1>Manage organizations, teams, and projects</h1>
+                <h4>Use Abstract organizations, teams, and projects to organize your people and your work.</h4>
+                <a href="https://help.abstract.com/hc/en-us/categories/360005436612-Using-Abstract">Learn More <img
+                        src="stock/link-arrow.svg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="parent-1">
+            <img src="https://theme.zdassets.com/theme_assets/2197739/3e82d0126e97d7b7c60a611d4e11b3c278d33743.png"
+                alt="">
+            <div class="content">
+                <h1>Manage billing</h1>
+                <h4>Change subscriptions and payment details.</h4>
+                <a href="https://help.abstract.com/hc/en-us/categories/360005436612-Using-Abstract">Learn More <img
+                        src="stock/link-arrow.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="parent-1">
+            <img src="https://theme.zdassets.com/theme_assets/2197739/7712592465ef5c7bf18f1c7cb16e19ab44eb81e3.png"
+                alt="">
+            <div class="content">
+                <h1>Authenticate to Abstract</h1>
+                <h4>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</h4>
+                <a href="https://help.abstract.com/hc/en-us/categories/360005436612-Using-Abstract">Learn More <img
+                        src="stock/link-arrow.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="parent-1">
+            <img src="https://theme.zdassets.com/theme_assets/2197739/dcc25d18e224d12621d74e545cc8bdd1b5685ca8.png"
+                alt="">
+            <div class="content">
+                <h1>Abstract support</h1>
+                <h4>Get in touch with a human.</h4>
+                <a href="https://help.abstract.com/hc/en-us/categories/360005436612-Using-Abstract">Learn More <img
+                        src="stock/link-arrow.svg" alt=""></a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+
+        (function checkInput() {
+            var input = document.getElementById('search')
+            var imgEl = document.getElementById('img');
+            if (input.classList.contains('typing')) {
+                input.classList.toggle('not-typing');
+            }
+        }
+        )()
+    </script>
 </body>
 
 </html>
