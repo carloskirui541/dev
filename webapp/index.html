@@ -1,50 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <style>
-        body{
+        * {
+            font-family: Poppins;
+
+        }
+
+        body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         nav {
-            font-family: Poppins;
-            padding-top: 10px;
-            background:black;
+            padding-top: 13px;
+            background: #000000;
             height: 30px;
-            padding-bottom: 40px;
+            padding-bottom: 43px;
             color: white;
         }
+
         ul {
             gap: .5rem;
             display: flex;
             list-style-type: none;
         }
-        li{
+
+        li {
             display: flex;
         }
-        li img{
-            height:40px;
+
+        li img {
+            height: 40px;
             padding-right: .5rem;
         }
-        li:nth-child(1) div, li:nth-child(2){
+
+        li div,
+        li:nth-child(2) {
+            font-size: 21px;
+            margin-top: .3rem;
+            margin-right: auto;
+        }
+
+        li div {
+            font-weight: bolder;
+        }
+
+        li:nth-child(2):hover {
+            border-bottom: 3px solid white;
+        }
+
+        .others {
+            display: flex;
+        }
+
+        button,
+        li {
+            cursor: pointer;
+        }
+
+        .submit {
+            font-size: 16pt;
+            border: 1px solid #fff;
+            color: white;
+            border-radius: 10px;
+            background: transparent;
+            margin-top: .3rem;
+            height: 39px;
+            width: 200px;
+            margin-right: 2rem;
+        }
+
+        .sign-in {
+            font-size: 13pt;
+            margin-right: 1rem;
+            height: 38px;
+            width: 85px;
+            background-color: #4C5FD5;
+            border: none;
+            /* outline: none; */
+            border-radius: 10px;
+        }
+
+        @media (min-width:1024px) {
+            .sign-in {
+                margin-right: 3rem;
+            }
+
+        }
+
+
+        article {
+            padding-top: .3rem;
+            padding-bottom: 4.2rem;
+            height: 300px;
+            background-color: #dadbf1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        article h2 {
+            font-size: 40pt;
+        }
+
+        .search-bar {
+            padding-left: 8px;
+            padding-right: 10px;
             padding-top: 1rem;
+            height: 45px;
+            background-color: #fff;
+            padding-bottom: 1rem;
+        }
+
+        .search-bar img {
+            height: 35px;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            outline: none;
+            width: 640px;
+            border: none;
+            font-size: 13pt;
+
         }
     </style>
 </head>
+
 <body>
     <nav>
         <ul>
-            
-            <li><img src="stock/logo.svg" alt=""><div>Abstract</div></li>
+
+            <li><img src="stock/logo.svg" alt="">
+                <div>Abstract</div>
+            </li>
             <li>| Help Center</li>
+            <div class="others">
+                <li><button class="submit">Submit a request</button></li>
+                <li><button class="sign-in">Sign in</button></li>
+            </div>
         </ul>
     </nav>
+
+    <!-- Banner Content -->
+    <article>
+        <h2>How can we help?</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search " />
+            <img src="stock/input-arrow.svg" alt="">
+        </div>
+    </article>
 </body>
+
 </html>
